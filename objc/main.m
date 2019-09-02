@@ -42,6 +42,19 @@ void printSomethingToTheConsole(){
     NSLog(@"is boxer ready? %s", isBoxerReady ? "True" : "False");
 }
 
+void declaringArrays(){
+    NSArray *myIntegerArray = @[@1, @2, @3, @4];
+    
+    int myIntegerVaule = [myIntegerArray[0] intValue];
+    
+    NSArray *myStringArray = @[@"First", @"Second", @"Third"];
+    
+    NSString *myFirstStringValue = myStringArray[0];
+    
+    NSLog(@"%@", myFirstStringValue);
+    
+    NSLog(@"%d", myIntegerVaule);
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -88,6 +101,7 @@ int main(int argc, const char * argv[]) {
         }
     }
     
-    printSomethingToTheConsole();
+    //printSomethingToTheConsole();
+    declaringArrays();
     return 0;
 }
